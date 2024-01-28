@@ -35,14 +35,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Row(
-          children: [
-            Icon(Icons.create),
-            Text("初めてのタイトル"),
-          ],
-        )
-      ),
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: const Row(
+            children: [
+              Icon(Icons.create),
+              Text("初めてのタイトル"),
+            ],
+          )),
       body: Column(
         children: [
           const Text("Hello World"),
@@ -72,6 +71,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () => {print("Did you push it?")},
+          child: const Icon(Icons.timer)),
     );
   }
 }
