@@ -42,10 +42,28 @@ class _MyHomePageState extends State<MyHomePage> {
           const Text("Hello World"),
           const Text("ハローワールド"),
           TextButton(
-            onPressed: () => {print("Button pressed")}, 
-            child: const Text("Text Button")),
-          // TextButton(
-          //   onPressed: () => {print("Pressed Button")}), child: const Text("Text Button")),
+              onPressed: () => {print("Button pressed")},
+              child: const Text("Text Button")),
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Icon(
+                Icons.favorite,
+                color: Colors.pink,
+                size: 24.0,
+              ),
+              Icon(
+                Icons.audiotrack,
+                color: Colors.green,
+                size: 30.0,
+              ),
+              Icon(
+                Icons.beach_access,
+                color: Colors.blue,
+                size: 36.0,
+              )
+            ],
+          ),
         ],
       ),
     );
