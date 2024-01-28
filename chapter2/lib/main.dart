@@ -35,7 +35,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: const Row(
+          children: [
+            Icon(Icons.create),
+            Text("初めてのタイトル"),
+          ],
+        )
       ),
       body: Column(
         children: [
