@@ -1,0 +1,76 @@
+site_name: Flutter Introduction
+site_url: https://nico25-orange.github.io/intro-flutter/
+site_description: Flutter Introduction
+repo_name: nico25-orange/intro-flutter
+repo_url: https://github.com/nico25-orange/intro-flutter
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - Notes:
+    - Chapter 1: chapter_1.md
+    - Chapter 2: chapter_2.md
+    - Chapter 3: chapter_3.md
+    - Chapter 4: chapter_4.md
+    - Chapter 5: chapter_5.md
+    - Chapter 6: chapter_6.md
+    - Chapter 7: chapter_7.md
+  # - Guide:
+  #   - Getting Started: getting_started.md
+  # - Appendix:
+  #   - Build MkDocs: appendix/build_mkdocs.md
+
+theme:
+    name: material
+    language: 'en'
+    icon:
+      logo: material/school
+      repo: fontawesome/brands/github
+    favicon: assets/git.svg
+    features:
+          - tabs: true
+          - header.autohide
+          - navigation.tabs
+          - navigation.instant
+          - navigation.footer
+          - content.action.edit
+          # - toc.integrate
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: true
+  - codehilite:
+      linenums: true
+      guess_lang: false
+      use_pygments: false
+      noclasses: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  search:
+    language: 'en'
+  version:
+    provider: mike
+
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+    - javascripts/config.js
+
+extra_css:
+    - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
