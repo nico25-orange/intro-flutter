@@ -49,3 +49,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 +  font_awesome_flutter: ^10.7.0
 ```
+
+## 04 アプリの実装例
+
+ブラウザでURLを開く際に利用するパッケージ: `url_launcher`
