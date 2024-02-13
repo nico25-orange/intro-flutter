@@ -9,4 +9,3 @@
 - Chapter 5: アプリのリリース
 - Chapter 6: Flutterの仕組みの活用
 - Chapter 7: デザインパターン
-
